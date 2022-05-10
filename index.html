@@ -1,404 +1,853 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>LASTIG - Laurent Caraffa</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i">
-  <link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
-  <link rel="stylesheet" href="vendor/academicons/css/academicons.min.css"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
-
-  <!-- Custom styles for this template -->
-  <link href="css/animate.css" rel="stylesheet">
-  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-  <link href="css/resume.css" rel="stylesheet">
-  <link href="css/extras.css" rel="stylesheet">
-
-  <!-- scripts on load -->
-  <script src="vendor/d3/d3.min.js"></script>
-  <script src="js/reviewing.js" charset="utf-8"></script>
-  <script src="js/hal.js" charset="utf-8"></script>
-
-</head>
-
-<body id="page-top" onload="reviewingVis('reviewing.json'); getPublicationsAuthor('laurent-caraffa');">
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <select class="selectpicker" data-width="fit">
-      <option data-content='<span class="flag-icon flag-icon-us"></span>'>English</option>
-      <option data-content='<span class="flag-icon flag-icon-fr"></span>'>Français</option>
-    </select>
-    <a class="nav-link text-muted subheading" href="/website">LASTIG</a>
-    <a class="nav-link text-muted subheading" href="/acte">ACTE</a>
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none">Laurent Caraffa</span>
-      <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/laurent.jpg" alt="">
-      </span>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about"><span class="lang-en">About</span><span class="lang-fr">Présentation</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#interest"><span class="lang-en">Research Interests</span><span class="lang-fr">Sujets de recherche</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#news"><span class="lang-en">News</span><span class="lang-fr">Actualités</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#timeline"><span class="lang-en">Experience</span><span class="lang-fr">Parcours professionnel</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#education"><span class="lang-en">Education</span><span class="lang-fr">Formation</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#projects"><span class="lang-en">Projects</span><span class="lang-fr">Projets</span></a>
-        </li>
-		<li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#supervisions">Supervisions</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#other"><span class="lang-en">Other research activities</span><span class="lang-fr">Autres activités de recherche</span></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="container-fluid p-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
-      <div class="w-100">
-        <h1 class="mb-0">Laurent
-          <span class="text-primary">Caraffa</span>
-        </h1>
-        <div class="subheading mb-5">73 avenue de Paris · 94165 Saint-Mandé CEDEX · (+33)1 43 98 73 61 ·
-          <a>laurent<!--anti@spam.fr!-->.caraffa@ign.fr</a>
-        </div>
-        <p class="lead mb-5 lang-en">Researcher in Geographic information science, Computer Vision, Teledetection, Lasergrammetry, and Big data.</p>
-        <p class="lead mb-5 lang-fr">Chargé de recherche à l'IGN en sciences de l'information géographique, vision par ordinateur, télédétection, Lasergrammétrie et reconstruction de surface et BigData.</p>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/laurentcaraffa/">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://www.researchgate.net/profile/Laurent_Caraffa">
-            <i class="ai ai-researchgate"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://scholar.google.fr/citations?user=N0YTGr8AAAAJ">
-            <i class="ai ai-google-scholar"></i>
-          </a>
-          <a href="#">
-            <i class="ai ai-publons"></i>
-          </a>
-          <a href="#">
-            <i class="ai ai-orcid"></i>
-          </a>
-          <a href="#">
-            <i class="ai"><img src="img/icons/hal-b2.svg" width=45px/></i>
-          </a>
-        </div>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <title>
+   LASTIG - Laurent Caraffa
+    </title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="vendor/academicons/css/academicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="css/resume.css" rel="stylesheet">
+    <link href="css/extras.css" rel="stylesheet">
+    <!-- scripts on load -->
+    <script src="vendor/d3/d3.min.js">
+    </script>
+    <script charset="utf-8" src="js/reviewing.js">
+    </script>
+    <script charset="utf-8" src="js/hal.js">
+    </script>
+  </head>
+  <body id="page-top" onload="reviewingVis('reviewing.json'); getPublicationsAuthor('laurent-caraffa');">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <select class="selectpicker" data-width="fit">
+        <option data-content='&lt;span class="flag-icon flag-icon-us"&gt;&lt;/span&gt;'>
+          English
+        </option>
+        <option data-content='&lt;span class="flag-icon flag-icon-fr"&gt;&lt;/span&gt;'>
+          Fran&ccedil;ais
+        </option>
+      </select>
+      <a class="nav-link text-muted subheading" href="/website">
+        LASTIG
+      </a>
+      <a class="nav-link text-muted subheading" href="/acte">
+        ACTE
+      </a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">
+          Laurent Caraffa
+        </span>
+        <span class="d-none d-lg-block">
+          <img alt="" class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/laurent.jpg">
+        </span>
+      </a>
+      <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon">
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">
+              <span class="lang-en">
+                About
+              </span>
+              <span class="lang-fr">
+                Pr&eacute;sentation
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#interest">
+              <span class="lang-en">
+                Research Interests
+              </span>
+              <span class="lang-fr">
+                Sujets de recherche
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#news">
+              <span class="lang-en">
+                News
+              </span>
+              <span class="lang-fr">
+                Actualit&eacute;s
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#timeline">
+              <span class="lang-en">
+                Experience
+              </span>
+              <span class="lang-fr">
+                Parcours professionnel
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education">
+              <span class="lang-en">
+                Education
+              </span>
+              <span class="lang-fr">
+                Formation
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#publications">
+              Publications
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">
+              <span class="lang-en">
+                Projects
+              </span>
+              <span class="lang-fr">
+                Projets
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#supervisions">
+              Supervisions
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#other">
+              <span class="lang-en">
+                Other research activities
+              </span>
+              <span class="lang-fr">
+                Autres activit&eacute;s de recherche
+              </span>
+            </a>
+          </li>
+        </ul>
       </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="interest">
-      <div class="w-100">
-        <h2 class="mb-5 lang-en">Research Interests</h2>
-        <h2 class="mb-5 lang-fr">Sujets de recherche</h2>
-        <hr class="star-dark mb-5">
-        <div class="row">
-          <article class="col-md-6 col-lg-4">
-                <div class="portfolio-item d-block mx-auto">
-                  <img class="img-fluid" src="img/app_surface.png" alt="" />
-                  <div class="portfolio-desc d-flex align-center position-absolute h-100 w-100">
-                    <div class="folio-info my-auto w-100 text-center">
-                      <h5 class="lang-en">Surface reconstruction</h5>
-                      <h5 class="lang-fr">Reconstruction de surface</h5>
-                    </div>
+    </nav>
+    <div class="container-fluid p-0">
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+        <div class="w-100">
+          <h1 class="mb-0">
+            Laurent
+            <span class="text-primary">
+              Caraffa
+            </span>
+          </h1>
+          <div class="subheading mb-5">
+            73 avenue de Paris &middot; 94165 Saint-Mand&eacute; CEDEX &middot; (+33)1 43 98 73 61 &middot;
+            <a>
+              laurent
+              <!--anti@spam.fr!-->
+       .caraffa@ign.fr
+            </a>
+          </div>
+          <p class="lead mb-5 lang-en">
+            Researcher in Geographic information science, computer vision, machine learning and big data.
+          </p>
+          <p class="lead mb-5 lang-fr">
+            Charg&eacute; de recherche &agrave; l'IGN en sciences de l'information g&eacute;ographique, vision par ordinateur, apprentissage,  reconstruction de surface et Big Data.
+          </p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/laurentcaraffa/">
+              <i class="fab fa-linkedin-in">
+              </i>
+            </a>
+            <a href="https://www.researchgate.net/profile/Laurent_Caraffa">
+              <i class="ai ai-researchgate">
+              </i>
+            </a>
+            <a href="https://github.com/lcaraffa">
+              <i class="fab fa-github">
+              </i>
+            </a>
+            <a href="https://twitter.com/LCaraffa">
+              <i class="fab fa-twitter">
+              </i>
+            </a>
+	    <a href="https://www.instagram.com/laurent_cc/">
+              <i class="fab fa-instagram">
+              </i>
+            </a>
+            <a href="https://scholar.google.fr/citations?user=N0YTGr8AAAAJ">
+              <i class="ai ai-google-scholar">
+              </i>
+            </a>
+            <!-- <a href="#"> -->
+            <!--   <i class="ai ai-publons"> -->
+            <!--   </i> -->
+            <!-- </a> -->
+            <!-- <a href="#"> -->
+            <!--   <i class="ai ai-orcid"> -->
+            <!--   </i> -->
+            <!-- </a> -->
+            <!-- <a href="#"> -->
+            <!--   <i class="ai"> -->
+            <!--     <img src="img/icons/hal-b2.svg" width="45px/"> -->
+            <!--   </i> -->
+            <!-- </a> -->
+          </div>
+        </div>
+      </section>
+      <hr class="m-0">
+      <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="interest">
+        <div class="w-100">
+          <h2 class="mb-5 lang-en">
+            Research Interests
+          </h2>
+          <h2 class="mb-5 lang-fr">
+            Sujets de recherche
+          </h2>
+          <hr class="star-dark mb-5">
+          <div class="row">
+            <article class="col-md-6 col-lg-4">
+              <div class="portfolio-item d-block mx-auto">
+                <img alt="" class="img-fluid" src="img/app_surface.png">
+                <div class="portfolio-desc d-flex align-center position-absolute h-100 w-100">
+                  <div class="folio-info my-auto w-100 text-center">
+                    <h5 class="lang-en">
+                      Surface reconstruction
+                    </h5>
+                    <h5 class="lang-fr">
+                      Reconstruction de surface
+                    </h5>
                   </div>
                 </div>
-          </article>
-          <div class="col-md-6 col-lg-4">
-                <div class="portfolio-item d-block mx-auto">
-                  <img class="img-fluid" src="img/sharedpts2.jpg" alt="" />
+              </div>
+            </article>
+	    <article class="col-md-6 col-lg-4">
+		<div class="portfolio-item d-block mx-auto">
+                  <img alt="" class="img-fluid" src="img/sharedpts2.jpg">
                   <div class="portfolio-desc align-center position-absolute h-100 w-100">
                     <div class="folio-info w-100 text-center">
-                      <h5 class="lang-en">Big data / Spark-hadoop</h5>
-                      <h5 class="lang-fr">Big data / Spark-hadoop</h5>
+                      <h5 class="lang-en">
+			Big data / Cloud Computing
+                      </h5>
+                      <h5 class="lang-fr">
+			Big data / Cloud Computing
+                      </h5>
                     </div>
                   </div>
-                </div>
+              </div>
+	    </article>
+	    <article class="col-md-6 col-lg-4">
+		<div class="portfolio-item d-block mx-auto">
+                  <img alt="" class="img-fluid" src="img/mincut.svg">
+                  <div class="portfolio-desc align-center position-absolute h-100 w-100">
+                    <div class="folio-info w-100 text-center">
+                      <h5 class="lang-en">
+			Mathematical optimization
+                      </h5>
+                      <h5 class="lang-fr">
+			Opimisation
+                      </h5>
+                    </div>
+                  </div>
+              </div>
+	    </article>
+	    <article class="col-md-6 col-lg-4">
+		<div class="portfolio-item d-block mx-auto">
+                  <img alt="" class="img-fluid" src="img/ross.jpg">
+                  <div class="portfolio-desc align-center position-absolute h-100 w-100">
+                    <div class="folio-info w-100 text-center">
+                      <h5 class="lang-en">
+			3D Mapping
+                      </h5>
+                      <h5 class="lang-fr">
+			3D Mapping
+                      </h5>
+                    </div>
+                  </div>
+              </div>
+	    </article>
+	    <article class="col-md-6 col-lg-4">
+		<div class="portfolio-item d-block mx-auto">
+                  <img alt="" class="img-fluid" src="img/bad_weather.jpg">
+                  <div class="portfolio-desc align-center position-absolute h-100 w-100">
+                    <div class="folio-info w-100 text-center">
+                      <h5 class="lang-en">
+			Photogrammetry in bad weather condition
+                      </h5>
+                      <h5 class="lang-fr">
+			Photogrammétrie en conditions dégradées
+                      </h5>
+                    </div>
+                  </div>
+              </div>
+	    </article>	    
           </div>
         </div>
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-<section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="news">
-    <div class="w-100">
-		<h2 class="mb-5 lang-en">News</h2>
-		<h2 class="mb-5 lang-fr">Actualités</h2>
-        <ul class="fa-ul mb-0">
-        <li>
-            <i class="fa-li fa fa-check-square"></i>
-			<h5> 08/12/19:
-				<span class="lang-en"> Miloud Mezian's PhD </span>
-				<span class="lang-fr"> Thèse de Miloud Mezian </span>
-			</h5>
-			<p class="lang-en">  Big Data 2019 conference</p>
-			<p class="lang-fr">  Participation à la conférence Big Data 2019 </p>
-		</li>
+      </section>
+      <hr class="m-0">
+      <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="news">
+        <div class="w-100">
+          <h2 class="mb-5 lang-en">
+            News
+          </h2>
+          <h2 class="mb-5 lang-fr">
+            Actualit&eacute;s
+          </h2>
+          <ul class="fa-ul mb-0">
 	    <li>
-        </li>
-        </ul>
-	</div>
-</section>
+              <i class="fa-li fa fa-check-square">
+              </i>
+              <h5>
+                4/04/22:
+                <span class="lang-en">
+                  (closed) Phd proposal : Point cloude based large-scale place recognition.
+                </span>
+                <span class="lang-fr">
+                  (clos) Sujet de thèse : Reconnaissance de lieu à grande échelle à partir de nuages de points 3D.
+                </span>
+              </h5>
+              <p class="lang-en">
 
-    <hr class="m-0">
+              </p>
+              <p class="lang-fr">
 
-    <section id="timeline" class="section appear clearfix">
-      <div class="container mar-bot50">
-		<h2 class="mb-5">Experience</h2>
-        <div class="row">
-          <div class="col-lg-12">
-            <ul class="timeline">
-              <li>
-                <div class="timeline-image">
-                  <img class="img-circle img-responsive" src="" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>2010-2013</h4>
-                    <h4 class="subheading lang-en">PhD student</h4>
-					<h4 class="subheading lang-fr">Doctorant</h4>
-                  </div>
-		<div class="timeline-body">
-                    <p class="text-muted lang-en"> PhD on stereoreconstruction under bad weather conditions</p>
-					<p class="text-muted lang-fr">Thèse posrtant sur la reconstruction par paire stéréoscopiques en conditions dégradées</p>
-                  </div>
-                  
-                </div>
-              </li>
+              </p>
+            </li>
+            <li>
+              <i class="fa-li fa fa-check-square">
+              </i>
+              <h5>
+                3/12/21:
+                <span class="lang-en">
+                  article "Efficiently Distributed Watertight Surface Reconstruction" accepted at 3DV2021.
+                </span>
+                <span class="lang-fr">
+                  l'article "Efficiently Distributed Watertight Surface Reconstruction" accept&eacute; à 3DV2021.
+                </span>
+              </h5>
+              <p class="lang-en">
 
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img class="img-circle img-responsive" src="" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>2014-2016</h4>
-                    <h4 class="subheading lang-en">PostDoc</h4>
-					<h4 class="subheading lang-fr">Post Doctorat</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted lang-en">After my PhD, I did a 2 years post-doc at IGN France on surface reconstruction.</p>
-					<p class="text-muted lang-fr">Après ma thèse, j'ai effectué un post-doc à l'IGN sur la problématique de reconstruction de surface.</p>
-                  </div>
-                </div>
-              </li>
+              </p>
+              <p class="lang-fr">
 
-	      <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img class="img-circle img-responsive" src="" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>2016-</h4>
-                    <h4 class="subheading lang-en">Permanent researcher</h4>
-					<h4 class="subheading lang-fr">Chargé de recherche</h4>
+              </p>
+            </li>
+            <li>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <hr class="m-0">
+      <section class="section appear clearfix" id="timeline">
+        <div class="container mar-bot50">
+          <h2 class="mb-5">
+            Experience
+          </h2>
+          <div class="row">
+            <div class="col-lg-12">
+              <ul class="timeline">
+                <li>
+                  <div class="timeline-image">
+                    <img alt="" class="img-circle img-responsive" src="">
                   </div>
-                  <div class="timeline-body">
-                    <p class="text-muted lang-en">permanent researcher at IGN France on photogrammetry and big data.</p>
-		    <p class="text-muted lang-fr">Chargé de recherche à l'IGN en photogrammetrie et Big-data.</p>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h4>
+                        2010-2013
+                      </h4>
+                      <h4 class="subheading lang-en">
+                        PhD student
+                      </h4>
+                      <h4 class="subheading lang-fr">
+                        Doctorant
+                      </h4>
+                    </div>
+                    <div class="timeline-body">
+                      <p class="text-muted lang-en">
+                        PhD on stereoreconstruction under bad weather conditions.
+                      </p>
+                      <p class="text-muted lang-fr">
+                        Th&egrave;se posrtant sur la reconstruction par paire st&eacute;r&eacute;oscopiques en conditions d&eacute;grad&eacute;es.
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </li>
-
-            </ul>
+                </li>
+                <li class="timeline-inverted">
+                  <div class="timeline-image">
+                    <img alt="" class="img-circle img-responsive" src="">
+                  </div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h4>
+                        2014-2016
+                      </h4>
+                      <h4 class="subheading lang-en">
+                        PostDoc
+                      </h4>
+                      <h4 class="subheading lang-fr">
+                        Post Doctorat
+                      </h4>
+                    </div>
+                    <div class="timeline-body">
+                      <p class="text-muted lang-en">
+                        After my PhD, I did a 2 years post-doc at IGN France on surface reconstruction.
+                      </p>
+                      <p class="text-muted lang-fr">
+                        Apr&egrave;s ma th&egrave;se, j'ai effectu&eacute; un post-doc &agrave; l'IGN sur la probl&eacute;matique de reconstruction de surface.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="timeline-inverted">
+                  <div class="timeline-image">
+                    <img alt="" class="img-circle img-responsive" src="">
+                  </div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h4>
+                        2016-
+                      </h4>
+                      <h4 class="subheading lang-en">
+                        Permanent researcher
+                      </h4>
+                      <h4 class="subheading lang-fr">
+                        Charg&eacute; de recherche
+                      </h4>
+                    </div>
+                    <div class="timeline-body">
+                      <p class="text-muted lang-en">
+                        permanent researcher at IGN France on photogrammetry and big data.
+                      </p>
+                      <p class="text-muted lang-fr">
+                        Charg&eacute; de recherche &agrave; l'IGN en photogrammetrie et Big-data.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="publications">
-      <div class="w-100">
-        <h2 class="mb-5">Publications</h2>
-
-        <span id="pubACL"><div class="subheading mb-3 mt-3">[ACL] Journals</div></span>
-        <span id="pubACLN"><div class="subheading mb-3 mt-3">[ACLN] Journals</div></span>
-        <span id="pubASCL"><div class="subheading mb-3 mt-3">[ASCL] Others</div></span>
-        <span id="pubACTI"><div class="subheading mb-3 mt-3">[ACTI] Conferences</div></span>
-        <span id="pubACTN"><div class="subheading mb-3 mt-3">[ACTN] Conferences</div></span>
-        <span id="pubCOM"><div class="subheading mb-3 mt-3">[COM] Conferences</div></span>
-        <span id="pubOS"><div class="subheading mb-3 mt-3">[OS] Books and Chapters</div></span>
-        <span id="pubDO"><div class="subheading mb-3 mt-3">[DO] Books and Chapters</div></span>
-        <span id="pubAFF"><div class="subheading mb-3 mt-3">[AFF] Posters</div></span>
-        <span id="pubAP"><div class="subheading mb-3 mt-3">[AP] Preprints</div></span>
-        <span id="pubTH"><div class="subheading mb-3 mt-3">[TH] Dissertations</div></span>
-        <span id="pubINV"><div class="subheading mb-3 mt-3">[INV] Invited Talks</div></span>
-        <span id="pubPV"><div class="subheading mb-3 mt-3">[PV] Popularization</div></span>
-
-        <!-- provide a subset of the publications based on a keyword -->
-        <!--
-        <span id="pubGeneralisation"><div class="subheading mb-3 mt-3">Généralisation</div></span>
-	<script> getKeywordPublicationsAuthorStartYear('guillaume-touya', 'Généralisation', 2006, "pubGeneralisation"); </script>
+      </section>
+            <hr class="m-0">
+      <hr class="m-0">
+            <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+        <div class="w-100">
+          <h2 class="mb-5">
+            <span class="lang-en">
+              Other research activities
+            </span>
+            <span class="lang-fr">
+              Autres activit&eacute;s de recherche
+            </span>
+          </h2>
+          <div class="subheading mb-3">
+            <span class="lang-en">
+              Teaching
+            </span>
+            <span class="lang-fr">
+              Enseignement
+            </span>
+          </div>
+          <div class="row projects">
+            <div class="col-md-4">
+              <div class="project">
+                <div class="icon-holder">
+                  <img alt="" class="icon" src="../acte/img/icons/ensg.png">
+                </div>
+                <h4 class="heading">
+                  ENSG/ING2
+                </h4>
+                <a class="description" href="http://www.ensg.eu/Engineer-cycle">
+                  <span class="lang-en">
+		    Courses in image processing : Image processing introduction, 3D Reconstruction.
+                  </span>
+                  <span class="lang-fr">
+                    Cours en traitement d'image : Introduction au traitement d'image, Reconstruction 3D.
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="subheading mb-3 mt-3"><span class="lang-en"> Invited talks </span> <span class="lang-fr"> Invitations </span> </div> -->
+          <!-- <ul class="fa-ul mb-0"> -->
+          <!-- <li> -->
+          <!--     <i class="fa-li fa fa-square"></i> -->
+          <!-- 		<span class="lang-en"> TODO </span> <span class="lang-fr"> AFAIRE </span> -->
+          <!-- 	</li> -->
+          <!-- </ul> -->
+          <!-- <div class="subheading mb-3 mt-3"><span class="lang-en"> Other </span> <span class="lang-fr"> Autres </span> </div> -->
+          <!-- <ul class="fa-ul mb-0"> -->
+          <!--   <li> -->
+          <!--     <i class="fa-li fa fa-square"></i> -->
+          <!-- 		<span class="lang-en"> Co-chair of the </span> <span class="lang-fr"> Co-chair du </span> -->
+          <!--     <a href="http://www2.isprs.org/commissions/comm2/wgs.html#wg_II/4"> ISPRS WG II/4 </a>  - <span class="lang-en"> 3D Scene Reconstruction and Analysis since July 2017 </span> <span class="lang-fr"> Reconstruction et analyse de scène 3D depuis Juillet 2017 </span> </li> -->
+          <!-- </ul> -->
+        </div>
+      </section>
+      <hr class="m-0">
+      <hr class="m-0">
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="publications">
+        <div class="w-100">
+          <h2 class="mb-5">
+            Publications
+          </h2>
+          <span id="pubACL">
+            <div class="subheading mb-3 mt-3">
+              [ACL] Journals
+            </div>
+          </span>
+          <span id="pubACLN">
+            <div class="subheading mb-3 mt-3">
+              [ACLN] Journals
+            </div>
+          </span>
+          <span id="pubASCL">
+            <div class="subheading mb-3 mt-3">
+              [ASCL] Others
+            </div>
+          </span>
+          <span id="pubACTI">
+            <div class="subheading mb-3 mt-3">
+              [ACTI] Conferences
+            </div>
+          </span>
+          <span id="pubACTN">
+            <div class="subheading mb-3 mt-3">
+              [ACTN] Conferences
+            </div>
+          </span>
+          <span id="pubCOM">
+            <div class="subheading mb-3 mt-3">
+              [COM] Conferences
+            </div>
+          </span>
+          <span id="pubOS">
+            <div class="subheading mb-3 mt-3">
+              [OS] Books and Chapters
+            </div>
+          </span>
+          <span id="pubDO">
+            <div class="subheading mb-3 mt-3">
+              [DO] Books and Chapters
+            </div>
+          </span>
+          <span id="pubAFF">
+            <div class="subheading mb-3 mt-3">
+              [AFF] Posters
+            </div>
+          </span>
+          <span id="pubAP">
+            <div class="subheading mb-3 mt-3">
+              [AP] Preprints
+            </div>
+          </span>
+          <span id="pubTH">
+            <div class="subheading mb-3 mt-3">
+              [TH] Dissertations
+            </div>
+          </span>
+          <span id="pubINV">
+            <div class="subheading mb-3 mt-3">
+              [INV] Invited Talks
+            </div>
+          </span>
+          <span id="pubPV">
+            <div class="subheading mb-3 mt-3">
+              [PV] Popularization
+            </div>
+          </span>
+          <!-- provide a subset of the publications based on a keyword -->
+          <!--
+                <span id="pubGeneralisation"><div class="subheading mb-3 mt-3">Généralisation</div></span>
+  <script>
+    getKeywordPublicationsAuthorStartYear('guillaume-touya', 'Généralisation', 2006, "pubGeneralisation"); </script>
         -->
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
-    <div class="w-100">
-	<h2 class="mb-5 lang-en">Projects</h2>
-    <h2 class="mb-5 lang-fr">Projets</h2>
-    <div class="subheading mb-3 lang-en">On-going and past research projects</div>
-	<div class="subheading mb-3 lang-fr">Projets en cours et passés</div>
-        <div class="row projects">
-          <div class="col-md-4">
-            <div class="project">
-              <div class="icon-holder">
-                <img src="../acte/img/icons/BIOM-Logo-small.png" alt="" width=150px>
-              </div>
-              <h4 class="heading"><a href="https://umrlastig.github.io/biom/">BIOM</a> </h4>
-		<p class="description "> <span class="lang-en"> Building Inside/Outside Modeling </span> <span class="lang-fr"> Modélisation intérieur/extérieur de bâtiments </span> <br><img src="../acte/img/icons/fr.svg" alt="" width=16px> <b><img src="../acte/img/icons/LOGOANR-300x122.png" alt="ANR" width=32px> AAPG 2018-2021</b></p>
-            </div>
+        </div>
+      </section>
+      <hr class="m-0">
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
+        <div class="w-100">
+          <h2 class="mb-5 lang-en">
+            Projects
+          </h2>
+          <h2 class="mb-5 lang-fr">
+            Projets
+          </h2>
+          <div class="subheading mb-3 lang-en">
+            On-going and past research projects
           </div>
-	<div class="col-md-4">
-            <div class="project">
-              <div class="icon-holder">
-                <img src="../acte/img/icons/volta.jpg" alt="" width=150px>
+          <div class="subheading mb-3 lang-fr">
+            Projets en cours et pass&eacute;s
+          </div>
+          <div class="row projects">
+            <div class="col-md-4">
+              <div class="project">
+                <div class="icon-holder">
+                  <img alt="" src="img/ross.jpg" width="150px">
+                </div>
+                <h4 class="heading">
+                  <a href="https://umrlastig.github.io/biom/">
+                    Urban Vision
+                  </a>
+                </h4>
+                <p class="description">
+                  <span class="lang-en">
+                    Virtual reality in urban environnement.
+                  </span>
+                  <span class="lang-fr">
+		    Réalitée virtuelle en environnement urbain.
+                  </span>
+                  <br>
+                  <img alt="" src="../acte/img/icons/fr.svg" width="16px">
+                  <b>
+                    "ISIT FUTURE" 
+                    2018-2022
+                  </b>
+                </p>
               </div>
-              <h4 class="heading"> <a href="https://volta.fbk.eu/">Volta</a> </h4>
-		<p class="description"> <span class="lang-en"> innoVation in geOspatiaL and 3D daTA </span> <span class="lang-fr"> Innovation en données géospatiales </span><br><img src="../acte/img/icons/Europe.svg" alt="" width=24px><b> EU MSC RISE H2020</b></p>
+            </div>
+            </div>
+            <div class="col-md-4">
+              <div class="project">
+                <div class="icon-holder">
+                  <img alt="" src="../acte/img/icons/BIOM-Logo-small.png" width="150px">
+                </div>
+                <h4 class="heading">
+                  <a href="https://umrlastig.github.io/biom/">
+                    BIOM
+                  </a>
+                </h4>
+                <p class="description">
+                  <span class="lang-en">
+                    Building Inside/Outside Modeling.
+                  </span>
+                  <span class="lang-fr">
+                    Mod&eacute;lisation int&eacute;rieur/ext&eacute;rieur de b&acirc;timents.
+                  </span>
+                  <br>
+                  <img alt="" src="../acte/img/icons/fr.svg" width="16px">
+                  <b>
+                    <img alt="ANR" src="../acte/img/icons/LOGOANR-300x122.png" width="32px">
+                    AAPG 2018-2021
+                  </b>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="project">
+                <div class="icon-holder">
+                  <img alt="" src="../acte/img/icons/volta.jpg" width="150px">
+                </div>
+                <h4 class="heading">
+                  <a href="https://volta.fbk.eu/">
+                    Volta
+                  </a>
+                </h4>
+                <p class="description">
+                  <span class="lang-en">
+                    innoVation in geOspatiaL and 3D daTA.
+                  </span>
+                  <span class="lang-fr">
+                    Innovation en donn&eacute;es g&eacute;ospatiales.
+                  </span>
+                  <br>
+                  <img alt="" src="../acte/img/icons/Europe.svg" width="24px">
+                  <b>
+                    EU MSC RISE H2020
+                  </b>
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="cut cut-bottom"></div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="supervisions">
-      <div class="w-100">
-        <h2 class="mb-5"> Supervisions </h2>
-        <div class="subheading mb-3"> <span class="lang-en"> PhDs </span> <span class="lang-fr"> Thèses </span> </div>
-		<ul class="fa-ul mb-0">
-
-	<li>
-            <i class="fa-li fa fa-square"></i>
-            <b> <a href="https://umrlastig.github.io/sguinard_homepage/">Stéphane Guinard</a> </b> (Université Paris Est-MSTIC PhD since 2017),  <span class="lang-en">co-supervised with Loïc Landrieu (STRUDEL, LASTIG, IGN): Simplicial complexes reconstruction </span> <span class="lang-fr"> co-supervisée avec Loïc Landrieu (LASTIG/STRUDEL, IGN): Reconstruction de complexes simpliciaux </span> </li>
-        </ul>
-		<div class="subheading mb-3"> Post docs </div>
-		        <ul class="fa-ul mb-0">
-
-		<li>
-			<i class="fa-li fa fa-check-square"></i> <b><a href="http://recherche.ign.fr/labos/matis/cv.php?nom=Rolin&prenom=Pierre">Pierre Rolin</a></b>
-			<span class="lang-en"> advised by </span>
-			<span class="lang-fr"> encadré par </span> Cyrielle Guérin, 2017 <br>
-			<span class="lang-en"> Watertight surface reconstruction from satellite imagery </span>
-			<span class="lang-fr"> Reconstruction de surfaces étanches à partir de données satellite </span>
-		</li>
-        </ul>
-
-	</section>
-		
-	<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="other">
-      <div class="w-100">
-        <h2 class="mb-5"> <span class="lang-en"> Other research activities </span> <span class="lang-fr"> Autres activités de recherche </span> </h2>
-        <div class="subheading mb-3"> <span class="lang-en"> Teaching </span> <span class="lang-fr"> Enseignement </span> </div>
-
-        <div class="row projects">
-          <div class="col-md-4">
-            <div class="project">
-              <div class="icon-holder">
-                <img src="../acte/img/icons/ensg.png" alt="" class="icon">
-              </div>
-              <h4 class="heading"> ENSG/ING2 </h4>
-              <a class="description" href="http://www.ensg.eu/Engineer-cycle"> 
-			  <span class="lang-en"> Courses in image processing and shape recognition in the second year of the Engineer cycle </span> <span class="lang-fr"> Cours en traitement d'image et reconnaissancedes formes en deuxième année du cycle d'ingénieur de l'ENSG </span></a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="project">
-              <div class="icon-holder">
-                <img src="img/icons/ensg.png" alt="" class="icon">
-              </div>
-              <h4 class="heading"> ENSG/PPMD </h4>
-              <a class="description" href="http://www.ensg.eu/Academic-Programs-MS-PPMD">
-			  <span class="lang-en"> Courses in image processing, optimization and reconstruction in the PPMD specialized master's degree </span> <span class="lang-fr"> Cours en traitement d'image optimisation et reconstruction au master spécialisé PPMD de l'ENSG</span></a>
-            </div>
-          </div>
+        <div class="cut cut-bottom">
         </div>
-
-	<!-- <div class="subheading mb-3 mt-3"><span class="lang-en"> Invited talks </span> <span class="lang-fr"> Invitations </span> </div> -->
-        <!-- <ul class="fa-ul mb-0"> -->
-        <!-- <li> -->
-        <!--     <i class="fa-li fa fa-square"></i> -->
-	<!-- 		<span class="lang-en"> TODO </span> <span class="lang-fr"> AFAIRE </span> -->
-	<!-- 	</li> -->
-        <!-- </ul> -->
-
-        <!-- <div class="subheading mb-3 mt-3"><span class="lang-en"> Other </span> <span class="lang-fr"> Autres </span> </div> -->
-        <!-- <ul class="fa-ul mb-0"> -->
-        <!--   <li> -->
-        <!--     <i class="fa-li fa fa-square"></i> -->
-	<!-- 		<span class="lang-en"> Co-chair of the </span> <span class="lang-fr"> Co-chair du </span> -->
-        <!--     <a href="http://www2.isprs.org/commissions/comm2/wgs.html#wg_II/4"> ISPRS WG II/4 </a>  - <span class="lang-en"> 3D Scene Reconstruction and Analysis since July 2017 </span> <span class="lang-fr"> Reconstruction et analyse de scène 3D depuis Juillet 2017 </span> </li> -->
-        <!-- </ul> -->
-    </section>
-
-  </div>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="vendor/jquery.isotope.min.js"></script>
-  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
-  <!-- Custom scripts for this template -->
-  <script src="js/resume.js"></script>
-
-</body>
-
+      </section>
+      <hr class="m-0">
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="supervisions">
+        <div class="w-100">
+          <h2 class="mb-5">
+            Supervisions
+          </h2>
+          <div class="subheading mb-3">
+            <span class="lang-en">
+              PhDs
+            </span>
+            <span class="lang-fr">
+              Th&egrave;ses
+            </span>
+          </div>
+          <ul class="fa-ul mb-0">
+            <li>
+            <i class="fa-li fa fa-square">
+            </i>
+            <b>
+              <a href="https://umrlastig.github.io/yanis-marchand">
+                Yanis Marchand
+              </a>
+            </b>
+	    [2020 - ]
+	    <span class="lang-en">
+                Phd supervisor :  Bruno Vallet.
+              </span>
+              <span class="lang-fr">
+		Directeur de thèse : Bruno Vallet.
+              </span>
+              <br>
+	    <span class="lang-en">
+                Large scale surface reconstruction. 
+            </span>
+            <span class="lang-fr">
+                Reconstruction de surface large echelle.
+            </span>
+            </li>
+	    <li>
+	    <i class="fa-li fa fa-check-square">
+              </i>
+              <b>
+                <a href="https://umrlastig.github.io/sguinard_homepage/">
+                  St&eacute;phane Guinard
+                </a>
+              </b>
+              [2017-2020]
+	      <span class="lang-en">
+                Phd supervisor :  Bruno Vallet, co-supervised with Lo&iuml;c Landrieu (STRUDEL, LASTIG, IGN).
+              </span>
+              <span class="lang-fr">
+		Directeur de thèse : Bruno Vallet, co-supervis&eacute;e avec Lo&iuml;c Landrieu (LASTIG/STRUDEL, IGN).
+              </span>
+              <br>
+              <span class="lang-en">
+                Simplicial complexes reconstruction.
+              </span>
+              <span class="lang-fr">
+                Reconstruction de complexes simpliciaux.
+              </span>
+            </li>
+          </ul>
+          <div class="subheading mb-3">
+            Research Engineer
+          </div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-square">
+              </i>
+              <b>
+                <a href="#">
+                  Mahmoud Boubaker
+                </a>
+              </b>
+	      [2022 - ]
+	      <br>
+              <span class="lang-en">
+                Urban Vision project, 3D Lidar Aquisition and 3D reconstruction from images.
+              </span>
+              <span class="lang-fr">
+		Projet Urban Vision, reconstruciton 3D à partir de lidar terrestre couplée à de la photogrammétrie.
+              </span>
+            </li>
+	    <li>
+              <i class="fa-li fa fa-square">
+              </i>
+              <b>
+                <a href="http://recherche.ign.fr/labos/matis/cv.php?nom=Florent&amp;prenom=Genier">
+                  Florent Genier
+                </a>
+              </b>
+	      [2022 - ]
+	      <br>
+              <span class="lang-en">
+                3D data processing, surface reconstruction, cloud computing.
+              </span>
+              <span class="lang-fr">
+		Traitement de données 3D, recontruction de surface, cloud computing.
+              </span>
+            </li>
+          </ul>
+	  <div class="subheading mb-3">
+            Post docs
+          </div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-check-square">
+              </i>
+              <b>
+                <a href="http://recherche.ign.fr/labos/matis/cv.php?nom=Rolin&amp;prenom=Pierre">
+                  Pierre Rolin
+                </a>
+              </b>
+	      [2017 - 2018] 
+              <span class="lang-en">
+                advised by
+              </span>
+              <span class="lang-fr">
+                co-encadr&eacute; par
+              </span>
+              Cyrielle Gu&eacute;rin
+              <br>
+              <span class="lang-en">
+                Watertight surface reconstruction from satellite imagery.
+              </span>
+              <span class="lang-fr">
+                Reconstruction de surfaces &eacute;tanches &agrave; partir de donn&eacute;es satellite.
+              </span>
+            </li>
+	    <li>
+              <i class="fa-li fa fa-check-square">
+              </i>
+              <b>
+                <a href="http://recherche.ign.fr/labos/matis/cv.php?nom=Rolin&amp;prenom=Pierre">
+                  Murat Yirci
+                </a>
+              </b>
+	      [2017 - 2018] 
+              <span class="lang-en">
+                co-advised by
+              </span>
+              <span class="lang-fr">
+                co-encadr&eacute; par
+              </span>
+              Mathieu Br&eacute;dif
+              <br>
+              <span class="lang-en">
+                Distributed Delaunay Triangulation.
+              </span>
+              <span class="lang-fr">
+                Calcul de triangulation distribuée.
+              </span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js">
+    </script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js">
+    </script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js">
+    </script>
+    <script src="vendor/jquery.isotope.min.js">
+    </script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js">
+    </script>
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.js">
+    </script>
+  </body>
 </html>
